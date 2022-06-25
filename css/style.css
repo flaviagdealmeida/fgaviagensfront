@@ -96,7 +96,8 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 400px;
+    width: 390px;
+    padding-top: 10px;
 }
   
 .banner-card{
@@ -131,6 +132,7 @@
 .reserva{
     background-image: linear-gradient(RoyalBlue, LightSkyBlue);
     height: 250px;
+    margin-top: 30px;
 }
 
 .reserva h3{
@@ -165,7 +167,7 @@
 
 .footer{
     background-image: linear-gradient(LightSkyBlue, CornflowerBlue);
-    margin-top: 5px;  
+    margin-top: 25px;  
     color: white;
     text-align: center;
    }

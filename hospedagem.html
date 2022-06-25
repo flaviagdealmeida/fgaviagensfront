@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="font/fontawesome-free-5.15.4-web/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow|Anton">
 
+    <link rel="stylesheet" href="boostrap/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="js/funcionalidades.js"></script>
+
     <title>Hospedagem</title>
 </head>
 
@@ -21,15 +26,21 @@
             <img class="logo" src="img/logo.png" alt="FGA Viagens" />
         </header>
 
-        <nav class="nav-bar">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Promoções</a></li>
-                <li><a href="passagens.html">Passagens</a></li>
-                <li><a href="hospedagem.html">Hospedagem</a></li>
-                <li><a href="#">Pacotes</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
 
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Promoções</a></li>
+                    <li class="nav-item"><a class="nav-link" href="passagens.html">Passagens</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hospedagem.html">Hospedagem</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Pacotes</a></li>
+                </ul>
+            </div>
         </nav>
 
         <section class="banner">
@@ -46,41 +57,41 @@
     
             </article>
         </section>
-        <div>
-
-            <!-- divisão da linha -->
-            <div class="row">
-                <!-- divisão da coluna 1 -->
-                <div class="column">
-                    <img class="img-card"src="img/CANCUN BAY.jpg" alt="Cancun Bay Resort"/>
-                    <div class="banner-card">
-                        <a href="#">Cancun Bay Resort </a>
-                    </div>
-
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                  <img class="img-card img-fluid"src="img/CANCUN BAY.jpg" alt="Coral Beach Resort"/>
+                  <div class="card-body">
+                    <h5 class="card-title">Cancun Bay Resort</h5>
+                    <a href="#" class="btn btn-lg btn-primary">Saiba mais</a>
+                   
+                  </div>
                 </div>
-                <!-- divisão da coluna 2 -->
-                <div class="column">
-                    <img class="img-card"src="img/CORAL BEACH.png" alt="Coral Beach Resort"/>
-                    <div class="banner-card">
-                        <a href="#">Coral Beach </a>
-                    </div>
+              </div>
+            <div class="col-sm-4">
+              <div class="card">
+                <img class="img-card img-fluid"src="img/CORAL BEACH.png" alt="Coral Beach Resort"/>
+                <div class="card-body">
+                    <h5 class="card-title">Coral Beach Resort</h5>
+                    <a href="#" class="btn btn-lg btn-primary">Saiba mais</a>
+                 
                 </div>
-                <div class="column">
-                    <!-- divisão da coluna 3 -->
-                    <img class="img-card" src="img/HAVEN RIVIERA.png" alt="Haven Riviera Resort"/>
-                        <div class="banner-card">
-                            <a href="#">Haven Riviera </a>
-                        </div>
-    
-                </div>
-              
+              </div>
             </div>
-
-        </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="img-card img-fluid" src="img/HAVEN RIVIERA.png" alt="Haven Riviera Resort"/>
+                  <div class="card-body">
+                    <h5 class="card-title">Haven Riviera Resort</h5>
+                    <a href="#" class="btn btn-lg btn-primary center">Saiba mais</a>
+                  </div>
+                </div>
+              </div>
+          </div>
 
         <section class="reserva">
             <h3> Encontre sua próxima estadia </h3>
-            <button type="button">Reserve Já</button>
+            <button type="button" onclick="abrirJanela()">Reserve Já</button>
         </section>
 
         <footer class="footer">
@@ -101,5 +112,11 @@
     </div>
 
 </body>
+
+<script>
+    function abrirNovaJanela(){
+        window.location.href = "reserva.html";
+    }
+</script>
 
 </html>
